@@ -4,7 +4,7 @@ import { AiFillProject } from "react-icons/ai";
 
 const Sidebar = ({ projectName }) => {
   return (
-    <aside className="grid-area-sidebar h-full border-r p-6 text-sm border-gray-700">
+    <aside className="grid-area-sidebar h-full border-r p-6 text-sm border-gray-700 hidden md:block">
       <nav>
         <div className="flex justify-between items-center">
           <h5 className="mb-2 text-sm font-semibold tracking-wide  uppercase ">

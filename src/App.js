@@ -52,7 +52,7 @@ export default class App extends Component {
       );
     }
     return (
-      <div>
+      <div className="h-full">
         <MultiStepForm
           onSubmit={this.handleSurveySubmit}
           projectName={this.state.projectName}

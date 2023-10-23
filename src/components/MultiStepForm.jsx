@@ -53,7 +53,7 @@ class MultiStepForm extends Component {
     const { currentStep, responses } = this.state;
     const currentQuestion = this.state.questions[currentStep];
     return (
-      <div className="flex justify-start items-center h-screen container mx-auto p-3">
+      <div className="flex justify-start items-center h-full container mx-auto p-3">
         <div className="flex flex-col h-1/2 gap-3 ">
           <div className="w-min relative rounded-full px-3 py-1 text-sm leading-6  ring-1 ring-gray-700">
             <span className="whitespace-nowrap ">
@@ -67,11 +67,11 @@ class MultiStepForm extends Component {
             </h1>
 
             {currentQuestion.options ? (
-              <div className="flex gap-3 items-baseline flex-wrap">
+              <div className="flex gap-2 items-center flex-wrap">
                 {currentQuestion.options.map((option, index) => (
                   <label
                     key={index}
-                    className="flex border rounded-full text-lg px-3 py-1 gap-3 cursor-pointer hover:bg-blue-700 text-white focus:bg-blue-900 border-gray-700"
+                    className="flex border rounded-full text-sm md:text-lg px-3 py-1 gap-3 cursor-pointer hover:bg-blue-700 text-white focus:bg-blue-900 border-gray-700 items-center"
                   >
                     <input
                       type="radio"
@@ -89,7 +89,7 @@ class MultiStepForm extends Component {
               </div>
             ) : (
               <input
-                className="border rounded text-lg px-3 py-1  bg-gray-900 text-white border-gray-800"
+                className="border rounded text-sm md:text-lg px-3 py-1  bg-gray-900 text-white border-gray-800"
                 type="text"
                 name="projectInformation"
                 value={this.props.projectName}

@@ -45,7 +45,6 @@ export default class Dashboard extends Component {
   };
 
   render() {
-    console.log(this.state.inProgress);
     return (
       <main className="grid-area-main">
         <div className="flex gap-3 flex-1 flex-col">
