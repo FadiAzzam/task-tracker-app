@@ -1,0 +1,97 @@
+[
+  {
+    "question": "Role in the Project",
+    "description": "What is your primary role in your web development project?",
+    "stateKey": "role",
+    "options": ["Developer", "Designer", "Marketer", "Project Manager", "Other"]
+  },
+  {
+    "question": "Project Type",
+    "description": "What type of web project are you working on?",
+    "stateKey": "projectType",
+    "options": [
+      "Personal Blog",
+      "E-commerce",
+      "Corporate Website",
+      "Social Media Platform",
+      "Other"
+    ]
+  },
+  {
+    "question": "Responsibilities",
+    "description": "What specific responsibilities do you have in this project?",
+    "stateKey": "responsibilities",
+    "options": [
+      "Frontend Development",
+      "Backend Development",
+      "User Interface Design",
+      "Content Creation",
+      "Marketing"
+    ]
+  },
+  {
+    "question": "Collaboration",
+    "description": "Are you working with a team on this project?",
+    "stateKey": "collaboration",
+    "options": ["Yes", "No"]
+  },
+  {
+    "question": "Project Scope",
+    "description": "What is the scope of your project? Is it a small, medium, or large-scale project?",
+    "stateKey": "projectScope",
+    "options": ["Small-scale", "Medium-scale", "Large-scale", "Other"]
+  },
+  {
+    "question": "Experience Level",
+    "description": "How would you describe your experience level in web development?",
+    "stateKey": "experienceLevel",
+    "options": ["Beginner", "Intermediate", "Expert", "Other"]
+  },
+  {
+    "question": "Development Stack",
+    "description": "What technology stack are you using for your project?",
+    "stateKey": "developmentStack",
+    "options": [
+      "JavaScript",
+      "Python",
+      "Ruby on Rails",
+      "React",
+      "Angular",
+      "Other"
+    ]
+  },
+  {
+    "question": "Specific Requirements",
+    "description": "Are there any specific features or functionalities you need for your project?",
+    "stateKey": "specificRequirements",
+    "options": [
+      "User Authentication",
+      "E-commerce Cart",
+      "Social Media Integration",
+      "Other"
+    ]
+  },
+  {
+    "question": "Project Timeline",
+    "description": "What is your project timeline?",
+    "stateKey": "projectTimeline",
+    "options": ["Short-term", "Long-term", "Other"]
+  },
+  {
+    "question": "Marketing Involvement",
+    "description": "Are you responsible for marketing the project, or is it handled by another team member?",
+    "stateKey": "marketingInvolvement",
+    "options": ["Yes", "No"]
+  },
+  {
+    "question": "Preferred Workflow",
+    "description": "What is your preferred workflow for managing project steps?",
+    "stateKey": "preferredWorkflow",
+    "options": ["Agile", "Waterfall", "Custom", "Other"]
+  },
+  {
+    "question": "Project Information",
+    "description": "What is the name of your project?",
+    "stateKey": "projectInformation"
+  }
+]

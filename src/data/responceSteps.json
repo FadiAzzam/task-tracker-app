@@ -1,0 +1,308 @@
+[
+  {
+    "title": "role",
+    "value": "Web Developer",
+    "steps": [
+      "Step 1: Understand the project requirements and objectives. Communicate with the client or project stakeholders to gather information.",
+      "Step 2: Choose a development stack based on the project's needs and requirements. For example, consider using JavaScript for frontend development and Node.js for backend development.",
+      "Step 3: Develop the website's frontend and backend. Start with creating a user-friendly UI, implement the required features, and ensure proper functionality."
+    ]
+  },
+  {
+    "title": "role",
+    "value": "Designer",
+    "steps": [
+      "Step 1: Create mockups and wireframes to visualize the website's layout and structure. Use design tools like Adobe XD or Sketch.",
+      "Step 2: Design the user interface (UI) and user experience (UX) of the website. Pay attention to color schemes, typography, and user flow.",
+      "Step 3: Collaborate with developers to ensure the design is implemented correctly. Provide design assets and guidelines for consistent UI."
+    ]
+  },
+  {
+    "title": "role",
+    "value": "Marketer",
+    "steps": [
+      "Step 1: Develop a comprehensive marketing strategy. Define target audiences, marketing channels, and key performance indicators (KPIs).",
+      "Step 2: Create content and visuals for marketing campaigns. This includes writing blog posts, designing ads, and producing engaging videos.",
+      "Step 3: Implement marketing campaigns on selected channels (e.g., social media, email marketing) and regularly analyze campaign performance. Adjust strategies as needed."
+    ]
+  },
+  {
+    "title": "role",
+    "value": "Project Manager",
+    "steps": [
+      "Step 1: Define project scope and objectives. Clearly outline what the project aims to achieve and what deliverables are expected.",
+      "Step 2: Create a detailed project plan. Allocate resources, set timelines, and define roles and responsibilities for the project team.",
+      "Step 3: Monitor project progress, manage risks, and ensure project success. Regularly communicate with team members and stakeholders, making adjustments as necessary."
+    ]
+  },
+  {
+    "title": "Project Type",
+    "value": "Personal Blog",
+    "steps": [
+      "Step 1: Choose a niche and target audience for your blog. Research and identify topics of interest to your audience.",
+      "Step 2: Select a content management system (CMS) such as WordPress. Install and configure it to create and manage your blog content.",
+      "Step 3: Create and publish high-quality content regularly. Focus on engaging writing, SEO optimization, and user-friendly design."
+    ]
+  },
+  {
+    "title": "Project Type",
+    "value": "E-commerce",
+    "steps": [
+      "Step 1: Choose an e-commerce platform such as Shopify or WooCommerce. Set up your online store, including product listings and categories.",
+      "Step 2: Create detailed product listings, complete with images, descriptions, and prices. Configure payment gateways to accept online payments.",
+      "Step 3: Implement SEO strategies to improve visibility, market your products effectively, and track sales. Monitor and optimize your e-commerce site for conversions."
+    ]
+  },
+  {
+    "title": "Project Type",
+    "value": "Corporate Website",
+    "steps": [
+      "Step 1: Define the corporate website's goals and target audience. Plan the structure and content needed to meet those objectives.",
+      "Step 2: Select a suitable technology stack and platform for the corporate site, ensuring security and scalability.",
+      "Step 3: Develop the website, focusing on professional design, clear communication of corporate information, and optimal user experience."
+    ]
+  },
+  {
+    "title": "Project Type",
+    "value": "Social Media Platform",
+    "steps": [
+      "Step 1: Define the purpose and features of your social media platform. Consider user registration, posting, commenting, and sharing functionalities.",
+      "Step 2: Choose a development stack for building the platform, such as using a combination of front-end and back-end technologies like React and Node.js.",
+      "Step 3: Develop and test the platform, ensuring a seamless user experience, real-time updates, and robust security measures."
+    ]
+  },
+  {
+    "title": "Responsibilities",
+    "value": "Backend Development",
+    "steps": [
+      "Step 1: Set up the backend infrastructure, including server and database configuration.",
+      "Step 2: Develop the server-side logic, APIs, and database integration.",
+      "Step 3: Optimize performance, security, and scalability of the backend system."
+    ]
+  },
+  {
+    "title": "Responsibilities",
+    "value": "User Interface Design",
+    "steps": [
+      "Step 1: Create wireframes and mockups to plan the website's layout and design elements.",
+      "Step 2: Design user interfaces with a focus on user experience, using tools like Adobe XD or Figma.",
+      "Step 3: Work closely with developers to ensure the design is implemented accurately and consistently."
+    ]
+  },
+  {
+    "title": "Responsibilities",
+    "value": "Content Creation",
+    "steps": [
+      "Step 1: Develop a content strategy and plan the types of content to be created (e.g., articles, videos, images).",
+      "Step 2: Create high-quality content based on the strategy, ensuring it's engaging, informative, and relevant to the target audience.",
+      "Step 3: Publish and promote the content on appropriate platforms to reach and engage the audience."
+    ]
+  },
+  {
+    "title": "Responsibilities",
+    "value": "Marketing",
+    "steps": [
+      "Step 1: Develop and execute a marketing strategy that includes defining target audiences, channels, and key performance indicators (KPIs).",
+      "Step 2: Create and manage marketing campaigns, including ad creation, content creation, and social media promotions.",
+      "Step 3: Monitor campaign performance, analyze data, and make data-driven adjustments to improve marketing effectiveness."
+    ]
+  },
+  {
+    "title": "Collaboration",
+    "value": "yes",
+    "steps": [
+      "Step 1: Establish effective communication channels within the project team, ensuring everyone is aligned with project goals.",
+      "Step 2: Collaborate closely with team members, share progress updates, and coordinate tasks to achieve project objectives.",
+      "Step 3: Regularly review and evaluate collaborative efforts to identify areas for improvement and ensure project success."
+    ]
+  },
+  {
+    "title": "Collaboration",
+    "value": "no",
+    "steps": [
+      "Step 1: Independently manage and execute project tasks as per the defined scope and responsibilities.",
+      "Step 2: Prioritize and complete tasks according to the project plan, taking ownership of your assigned work.",
+      "Step 3: Continuously assess progress and adjust tasks as needed to meet project goals, even without active collaboration."
+    ]
+  },
+  {
+    "title": "Project Scope",
+    "value": "Small-scale",
+    "steps": [
+      "Step 1: Define a clear and focused project scope with specific objectives and deliverables.",
+      "Step 2: Create a project plan with a timeline, allocate resources, and develop a budget for the small-scale project.",
+      "Step 3: Execute the project, closely monitoring progress and ensuring that the scope remains manageable and achievable."
+    ]
+  },
+  {
+    "title": "Project Scope",
+    "value": "Medium-scale",
+    "steps": [
+      "Step 1: Define a comprehensive project scope with detailed objectives, deliverables, and stakeholder expectations.",
+      "Step 2: Create a detailed project plan, allocating resources and budget for a medium-scale project, and managing risks effectively.",
+      "Step 3: Execute the project, continuously monitoring and adapting to changes while ensuring successful project delivery."
+    ]
+  },
+  {
+    "title": "Project Scope",
+    "value": "Large-scale",
+    "steps": [
+      "Step 1: Establish a well-defined project scope for a large-scale project, ensuring clarity, alignment with organizational goals, and stakeholder agreement.",
+      "Step 2: Create a comprehensive project plan, including resource allocation, budget management, and advanced risk analysis and mitigation.",
+      "Step 3: Execute the large-scale project, closely monitoring progress, managing complexities, and delivering successful outcomes."
+    ]
+  },
+  {
+    "title": "Experience Level",
+    "value": "Beginner",
+    "steps": [
+      "Step 1: Acquire foundational knowledge in your area of expertise through learning resources and introductory courses.",
+      "Step 2: Gain hands-on experience by working on small projects or under supervision to build practical skills.",
+      "Step 3: Seek guidance from mentors, continue learning, and gradually take on more challenging tasks to grow as a beginner."
+    ]
+  },
+  {
+    "title": "Experience Level",
+    "value": "Intermediate",
+    "steps": [
+      "Step 1: Build on your foundational knowledge by taking advanced courses and exploring specialized areas within your domain.",
+      "Step 2: Work on more complex projects independently or as part of a team, applying your skills and expanding your expertise.",
+      "Step 3: Continuously seek professional development opportunities and strive for mastery within the intermediate level."
+    ]
+  },
+  {
+    "title": "Experience Level",
+    "value": "Expert",
+    "steps": [
+      "Step 1: Deepen your expertise by pursuing advanced education, conducting research, and gaining extensive practical experience.",
+      "Step 2: Lead and contribute to high-impact projects, demonstrating mastery in your field and mentoring others.",
+      "Step 3: Stay current with emerging trends and technologies, remaining at the forefront of your industry as an expert."
+    ]
+  },
+  {
+    "title": "Development Stack",
+    "value": "JavaScript",
+    "steps": [
+      "Step 1: Master the fundamentals of JavaScript, including syntax, data structures, and core concepts.",
+      "Step 2: Explore and specialize in JavaScript frameworks and libraries like React, Angular, or Vue for frontend development.",
+      "Step 3: Learn server-side JavaScript (Node.js) and build full-stack applications for a comprehensive skillset."
+    ]
+  },
+  {
+    "title": "Development Stack",
+    "value": "Python",
+    "steps": [
+      "Step 1: Develop a strong foundation in Python programming, covering data structures, algorithms, and object-oriented programming.",
+      "Step 2: Explore Python's application in web development (e.g., Django or Flask), data science, machine learning, or automation.",
+      "Step 3: Work on projects that incorporate Python in various domains, gaining practical experience."
+    ]
+  },
+  {
+    "title": "Development Stack",
+    "value": "React",
+    "steps": [
+      "Step 1: Learn the fundamentals of React, including components, props, state management, and JSX syntax.",
+      "Step 2: Build interactive and dynamic web applications using React, integrating with backend services and APIs.",
+      "Step 3: Explore advanced topics like state management libraries (e.g., Redux) and server-side rendering (SSR) for more complex projects."
+    ]
+  },
+  {
+    "title": "Development Stack",
+    "value": "Angular",
+    "steps": [
+      "Step 1: Gain a deep understanding of Angular, including components, services, modules, and dependency injection.",
+      "Step 2: Develop robust web applications with Angular, focusing on creating reusable components and optimizing performance.",
+      "Step 3: Master advanced Angular features like routing, form handling, and state management for complex application development."
+    ]
+  },
+  {
+    "title": "Specific Requirements",
+    "value": "User Authentication",
+    "steps": [
+      "Step 1: Define the user authentication requirements for the project, including authentication methods (e.g., email/password, social login).",
+      "Step 2: Implement user authentication features, including user registration, login, and password reset functionalities.",
+      "Step 3: Ensure security and data protection, implement authorization controls, and thoroughly test the authentication system."
+    ]
+  },
+  {
+    "title": "Specific Requirements",
+    "value": "E-commerce Cart",
+    "steps": [
+      "Step 1: Define e-commerce cart requirements, including cart management, product addition/removal, and checkout processes.",
+      "Step 2: Develop and integrate a secure e-commerce cart system with features like product management, cart updates, and payment processing.",
+      "Step 3: Test the cart thoroughly for usability, security, and performance, ensuring a seamless shopping experience."
+    ]
+  },
+  {
+    "title": "Specific Requirements",
+    "value": "Social Media Integration",
+    "steps": [
+      "Step 1: Identify the social media platforms for integration and determine the goals of social media presence (e.g., sharing, login).",
+      "Step 2: Implement social media integration features, including sharing buttons, social login, and profile linking.",
+      "Step 3: Monitor social media activity, analyze engagement, and optimize social media interactions to meet project objectives."
+    ]
+  },
+  {
+    "title": "Project Timeline",
+    "value": "Short-term",
+    "steps": [
+      "Step 1: Define clear and specific short-term project goals and deliverables with a timeline usually within a few weeks to a few months.",
+      "Step 2: Create a detailed project schedule, allocate resources, and ensure efficient time management to meet short-term deadlines.",
+      "Step 3: Regularly track progress, address issues promptly, and prioritize tasks to achieve successful short-term project completion."
+    ]
+  },
+  {
+    "title": "Project Timeline",
+    "value": "Long-term",
+    "steps": [
+      "Step 1: Establish long-term project objectives, often spanning several months to years, and ensure alignment with organizational goals.",
+      "Step 2: Develop a comprehensive project roadmap, allocating resources, budget, and contingencies for long-term project success.",
+      "Step 3: Continuously monitor progress, adapt to changes, and ensure that long-term goals and milestones are met successfully."
+    ]
+  },
+  {
+    "title": "Marketing Involvement",
+    "value": "yes",
+    "steps": [
+      "Step 1: Develop and execute a marketing strategy, taking into account the level of marketing involvement. Define target audiences, channels, and KPIs accordingly.",
+      "Step 2: Actively participate in marketing campaigns, content creation, and social media promotions based on the degree of marketing involvement.",
+      "Step 3: Monitor campaign performance and collaborate with the marketing team to optimize strategies and achieve marketing goals."
+    ]
+  },
+  {
+    "title": "Marketing Involvement",
+    "value": "no",
+    "steps": [
+      "Step 1: Focus on core responsibilities and tasks without direct involvement in marketing efforts.",
+      "Step 2: Prioritize and execute responsibilities as outlined in the project plan, concentrating on the primary role.",
+      "Step 3: Provide support or information as needed to marketing professionals but maintain focus on other project-related duties."
+    ]
+  },
+  {
+    "title": "Preferred Workflow",
+    "value": "Agile",
+    "steps": [
+      "Step 1: Embrace Agile methodologies, fostering collaboration, adaptability, and iterative development. Define Agile roles and rituals if applicable.",
+      "Step 2: Plan and execute Agile sprints, with regular stand-up meetings, backlog management, and continuous delivery of increments.",
+      "Step 3: Continuously gather feedback, adjust priorities, and enhance project outcomes using Agile principles."
+    ]
+  },
+  {
+    "title": "Preferred Workflow",
+    "value": "Waterfall",
+    "steps": [
+      "Step 1: Follow the traditional Waterfall approach with distinct project phases, starting with requirements analysis, followed by design, development, testing, and deployment.",
+      "Step 2: Carefully manage each phase, ensuring that one phase is completed before moving to the next. Plan thoroughly and minimize changes once a phase has begun.",
+      "Step 3: Focus on documentation and formal project reviews, aiming for a structured and well-defined project outcome."
+    ]
+  },
+  {
+    "title": "Preferred Workflow",
+    "value": "Custom",
+    "steps": [
+      "Step 1: Define a customized project workflow that aligns with the unique needs and complexities of the project.",
+      "Step 2: Develop and execute the custom workflow, which may involve a combination of methodologies or tailored processes to achieve project goals.",
+      "Step 3: Continuously evaluate and refine the custom workflow based on project performance, making adjustments to optimize project success."
+    ]
+  }
+]

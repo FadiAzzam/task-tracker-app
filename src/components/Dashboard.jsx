@@ -1,0 +1,171 @@
+import React, { Component } from "react";
+import { TbProgress, TbCheck } from "react-icons/tb";
+
+import Tabs from "./Tabs";
+
+export default class Dashboard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      backlog: this.props.steps,
+      inProgress: [],
+      completed: [],
+    };
+  }
+
+  moveToInProgress = (stepIndex, subStepIndex) => {
+    const { backlog, inProgress } = this.state;
+    const selectedStep = backlog[stepIndex].steps[subStepIndex];
+
+    inProgress.push(selectedStep);
+    const newBacklog = backlog[stepIndex].steps.splice(subStepIndex, 1);
+
+    this.setState({
+      backlog,
+      inProgress,
+    });
+  };
+
+  moveToCompleted = (stepIndex, subStepIndex) => {
+    const { backlog, completed } = this.state;
+    const selectedStep = backlog[stepIndex].steps[subStepIndex];
+
+    completed.push(selectedStep);
+    backlog[stepIndex].steps.splice(subStepIndex, 1);
+
+    this.setState({
+      backlog,
+      completed,
+    });
+  };
+
+  render() {
+    console.log("Backlog: " + this.state.backlog.length);
+    console.log("progress: " + this.state.inProgress.length);
+    console.log("completed: " + this.state.completed.length);
+    return (
+      <main className="grid-area-main">
+        <div className="flex gap-3 flex-1 flex-col">
+          <div className=" py-6 px-3">
+            <h2 className="text-2xl font-bold">
+              {this.props.projectName || "your project"}
+            </h2>
+          </div>
+          <Tabs />
+          <div className="p-2 grid grid-cols-1 md:grid-cols-3 gap-2">
+            <div className="p-2 rounded">
+              <div className="flex justify-between items-center">
+                <h5 className="font-bold pb-4 pt-2">Backlog</h5>
+                <h5 className="font-bold pb-4 pt-2">
+                  {this.state.backlog.length}
+                </h5>
+              </div>
+              <div className="h-full overflow-auto">
+                <ul className="flex flex-col gap-2">
+                  {this.state.backlog.length > 0 ? (
+                    this.props.steps.map((step, stepIndex) => {
+                      return step?.steps?.map((st, i) => {
+                        return (
+                          <li
+                            key={i}
+                            className="p-2 rounded flex flex-col gap-1  bg-gray-800 hover:bg-gray-800/70 border border-gray-700"
+                          >
+                            <small>{step.title}</small>
+                            <small className="font-bold text-gray-200">
+                              {step.value}
+                            </small>
+                            <p>{st}</p>
+                            <div className=" flex gap-1">
+                              <span
+                                onClick={() =>
+                                  this.moveToInProgress(stepIndex, i)
+                                }
+                                className=" cursor-pointer text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded mr-2 bg-gray-700 text-gray-400 border border-gray-500 hover:bg-blue-600 hover:text-white hover:border-blue-500"
+                              >
+                                <TbProgress className="w-2.5 h-2.5 mr-1.5" />
+                                to progress
+                              </span>
+                              <span
+                                onClick={() =>
+                                  this.moveToCompleted(stepIndex, i)
+                                }
+                                className=" cursor-pointer text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded mr-2 bg-gray-700 text-gray-400 border border-gray-500 hover:bg-blue-600 hover:text-white hover:border-blue-500"
+                              >
+                                <TbCheck className="w-2.5 h-2.5 mr-1.5" />
+                                to completed
+                              </span>
+                            </div>
+                          </li>
+                        );
+                      });
+                    })
+                  ) : (
+                    <li className="p-2 rounded flex flex-col gap-1  cursor-pointer bg-gray-800 hover:bg-gray-800/70 border border-gray-700">
+                      <p>Add new element</p>
+                    </li>
+                  )}
+                </ul>
+              </div>
+            </div>
+            <div className="p-2 rounded">
+              <div className="flex justify-between items-center">
+                <h5 className="font-bold pb-4 pt-2">In progress</h5>
+                <h5 className="font-bold pb-4 pt-2">
+                  {this.state.inProgress.length}
+                </h5>
+              </div>
+              <ul className="flex flex-col gap-2">
+                {this.state.inProgress.length ? (
+                  this.state.inProgress.map((step, i) => (
+                    <li
+                      key={i}
+                      className="p-2 rounded flex flex-col gap-1  bg-gray-800 hover:bg-gray-800/70 border border-gray-700"
+                    >
+                      <small>{step.title}</small>
+                      <small className="font-bold text-gray-200">
+                        {step.value}
+                      </small>
+                      <p>{step}</p>
+                    </li>
+                  ))
+                ) : (
+                  <li className="p-2 rounded flex flex-col gap-1  cursor-pointer bg-gray-800 hover:bg-gray-800/70 border border-gray-700">
+                    <p>Add new element</p>
+                  </li>
+                )}
+              </ul>
+            </div>
+            <div className="p-2 rounded">
+              <div className="flex justify-between items-center">
+                <h5 className="font-bold pb-4 pt-2">Completed</h5>
+                <h5 className="font-bold pb-4 pt-2">
+                  {this.state.completed.length}
+                </h5>
+              </div>
+              <ul className="flex flex-col gap-2">
+                {this.state.completed.length ? (
+                  this.state.completed.map((step, i) => (
+                    <li
+                      key={i}
+                      className="p-2 rounded flex flex-col gap-1  bg-gray-800 hover:bg-gray-800/70 border border-gray-700"
+                    >
+                      <small>{step.title}</small>
+                      <small className="font-bold text-gray-200">
+                        {step.value}
+                      </small>
+                      <p>{step}</p>
+                    </li>
+                  ))
+                ) : (
+                  <li className="p-2 rounded flex flex-col gap-1  cursor-pointer bg-gray-800 hover:bg-gray-800/70 border border-gray-700">
+                    <p>Add new element</p>
+                  </li>
+                )}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    );
+  }
+}
