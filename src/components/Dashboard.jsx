@@ -17,12 +17,14 @@ export default class Dashboard extends Component {
     const { backlog, inProgress } = this.state;
     const selectedStep = backlog[stepIndex].steps[subStepIndex];
 
-    inProgress.push(selectedStep);
-    const newBacklog = backlog[stepIndex].steps.splice(subStepIndex, 1);
-
+    const updatedInProgress = [...inProgress, { value: selectedStep }];
+    const updatedBacklog = [...backlog];
+    updatedBacklog[stepIndex].steps = updatedBacklog[stepIndex].steps.filter(
+      (_, index) => index !== subStepIndex
+    );
     this.setState({
-      backlog,
-      inProgress,
+      backlog: updatedBacklog,
+      inProgress: updatedInProgress,
     });
   };
 
@@ -30,19 +32,20 @@ export default class Dashboard extends Component {
     const { backlog, completed } = this.state;
     const selectedStep = backlog[stepIndex].steps[subStepIndex];
 
-    completed.push(selectedStep);
-    backlog[stepIndex].steps.splice(subStepIndex, 1);
+    const updatedCompleted = [...completed, selectedStep];
+    const updatedBacklog = [...backlog]; // Create a shallow copy of backlog
+    updatedBacklog[stepIndex].steps = updatedBacklog[stepIndex].steps.filter(
+      (_, index) => index !== subStepIndex
+    );
 
     this.setState({
-      backlog,
-      completed,
+      backlog: updatedBacklog,
+      completed: updatedCompleted,
     });
   };
 
   render() {
-    console.log("Backlog: " + this.state.backlog.length);
-    console.log("progress: " + this.state.inProgress.length);
-    console.log("completed: " + this.state.completed.length);
+    console.log(this.state.inProgress);
     return (
       <main className="grid-area-main">
         <div className="flex gap-3 flex-1 flex-col">
@@ -63,7 +66,7 @@ export default class Dashboard extends Component {
               <div className="h-full overflow-auto">
                 <ul className="flex flex-col gap-2">
                   {this.state.backlog.length > 0 ? (
-                    this.props.steps.map((step, stepIndex) => {
+                    this.state.backlog.map((step, stepIndex) => {
                       return step?.steps?.map((st, i) => {
                         return (
                           <li
@@ -122,10 +125,18 @@ export default class Dashboard extends Component {
                       className="p-2 rounded flex flex-col gap-1  bg-gray-800 hover:bg-gray-800/70 border border-gray-700"
                     >
                       <small>{step.title}</small>
-                      <small className="font-bold text-gray-200">
-                        {step.value}
-                      </small>
-                      <p>{step}</p>
+
+                      <p>{step.value}</p>
+                      <div className=" flex gap-1">
+                        <span className="cursor-default text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded mr-2 bg-yellow-600  border border-yellow-500  text-white ">
+                          <TbProgress className="w-3 h-3 mr-1.5" />
+                          In progress
+                        </span>
+                        <span className=" cursor-pointer text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded mr-2 bg-gray-700 text-gray-400 border border-gray-500 hover:bg-blue-600 hover:text-white hover:border-blue-500">
+                          <TbCheck className="w-2.5 h-2.5 mr-1.5" />
+                          to completed
+                        </span>
+                      </div>
                     </li>
                   ))
                 ) : (
@@ -154,6 +165,12 @@ export default class Dashboard extends Component {
                         {step.value}
                       </small>
                       <p>{step}</p>
+                      <div className=" flex gap-1">
+                        <span className="cursor-default text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded mr-2 bg-green-700  border border-green-500  text-white ">
+                          <TbCheck className="w-3 h-3 mr-1.5" />
+                          completed
+                        </span>
+                      </div>
                     </li>
                   ))
                 ) : (

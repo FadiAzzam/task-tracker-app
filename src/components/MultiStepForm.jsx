@@ -113,10 +113,10 @@ class MultiStepForm extends Component {
               </Button>
             )}
 
-            {currentStep < this.state.questions.length - 1 && (
+            {currentStep === this.state.questions.length - 1 && (
               <Button
                 variant="success"
-                handleClick={() => this.props.onSubmit(this.state.responses)}
+                handleClick={() => this.props.onSubmit(responses)}
               >
                 Save
                 <BiCheck className="w-5 h-5 ml-2" />

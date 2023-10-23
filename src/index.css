@@ -72,8 +72,3 @@ code {
 	grid-area: main;
 	overflow-y: auto;
 }
-
-.grid-area-article {
-	grid-area: article;
-	overflow-y: auto;
-}
